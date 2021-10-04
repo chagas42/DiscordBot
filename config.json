@@ -1,0 +1,9 @@
+{
+    "TOKEN": "ODkzNjIwMjg0NDcxNTMzNjE4.YVeGvg.dfasXzBv_P5FO119VYNO20HRX8U",
+    "PREFIX": ">",
+    "GOOGLE_KEY": "AIzaSyCMfEionBhLD7B3BwZbmDVwLcfabLo0xvk",
+    "YTDL":{ 
+        "filter": "audioonly"
+    }
+}
+
