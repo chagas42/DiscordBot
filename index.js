@@ -2,6 +2,8 @@
 //imports
 const { Client } = require('discord.js');
 const config = require('./config.json');
+const dotenv = require("dotenv");
+
 const { join } = require('./src/commands/join.js');
 const { leave } = require('./src/commands/leave.js');
 const  { play }  = require('./src/commands/play.js');
@@ -19,6 +21,9 @@ const servers = {
       playing:false
   }
 }
+
+dotenv.config();
+console.log(process.env.TOKEN);
 
 const { PREFIX, TOKEN } = config;
 
@@ -99,7 +104,7 @@ client.on('message', async (msg) => {
 
 });
 
-client.login(TOKEN);
+client.login(process.env.TOKEN);
 
 
 

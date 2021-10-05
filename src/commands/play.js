@@ -3,12 +3,11 @@ const { validateURL } = ytdl;
 const { youtube_v3 } = require('googleapis');
 const { MessageEmbed } = require('discord.js')
 
-const config = require('../../config.json');
 const { playMusics } = require('../utils/playMusics.js');
 
 const youtube = new youtube_v3.Youtube({
     version:'v3',
-    auth: config.GOOGLE_KEY
+    auth: process.env.GOOGLE_KEY
 })
 
 
