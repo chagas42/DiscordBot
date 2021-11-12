@@ -25,7 +25,7 @@ const servers = {
 dotenv.config();
 console.log(process.env.TOKEN);
 
-const { PREFIX, TOKEN } = config;
+const { PREFIX } = config;
 
 
 const client = new Client();

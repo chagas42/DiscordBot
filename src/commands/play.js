@@ -35,7 +35,6 @@ module.exports.play = async function (msg, servers) {
             servers.server.queue.push(link);
             playMusics(servers);
 
-            console.log(`Adicionado: via link`);
 
         } else { //caso seja txt para pesquisa
 
